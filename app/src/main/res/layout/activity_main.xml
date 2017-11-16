@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:addStatesFromChildren="false"
+        android:alwaysDrawnWithCache="false"
+        app:layout_editor_absoluteX="0dp"
+        app:layout_editor_absoluteY="80dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="80dp">
+
+        <ImageView
+            android:id="@+id/ProfileImage"
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            android:contentDescription="@string/placeholder"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_creator="1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_creator="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/photographer" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            style="@style/HeaderTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileImage" />
+
+        <TextView
+            android:id="@+id/occupationTextView"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/occupation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+            app:layout_constraintVertical_bias="0.018" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintGuide_begin="119dp"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileImage" />
+
+        <TextView
+            android:id="@+id/lensesTextView"
+            style="@style/Body2TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/lenses"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cameraTextView" />
+
+        <TextView
+            android:id="@+id/experienceTextView"
+            style="@style/Body2TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/experience"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lensesTextView" />
+
+        <TextView
+            android:id="@+id/cameraTextView"
+            style="@style/Body2TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/camera"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/occupationTextView" />
+
+        <TextView
+            android:id="@+id/CameraTypeTextView"
+            style="@style/Body1TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/type_of_camera"
+            app:layout_constraintBaseline_toBaselineOf="@+id/cameraTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+        <TextView
+            android:id="@+id/lensTypeTextView"
+            style="@style/Body1TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/type_of_lenses"
+            app:layout_constraintBaseline_toBaselineOf="@+id/lensesTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+        <TextView
+            android:id="@+id/yearsTextView"
+            style="@style/Body1TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/years_of_experience"
+            app:layout_constraintBaseline_toBaselineOf="@+id/experienceTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/actualLocationTextView"-->
+        <!--style="@style/Body1TextStyle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginStart="32dp"-->
+        <!--android:onClick="showLocation"-->
+        <!--android:text="@string/location"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/locationImageView"-->
+        <!--app:layout_constraintVertical_bias="0.521" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/actualPhoneNumberTextView"-->
+        <!--style="@style/Body1TextStyle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginEnd="32dp"-->
+        <!--android:onClick="dialPhoneNumber"-->
+        <!--android:text="@string/actual_phone_number"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/phoneImageView" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/socialNetworkLinkTextView"-->
+        <!--style="@style/Body1TextStyle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:onClick="openApp"-->
+        <!--android:text="@string/social_network_link"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/socialNetworkImageView" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/locationImageView"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginStart="56dp"-->
+        <!--android:contentDescription="@string/place"-->
+        <!--android:onClick="showLocation"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/actualLocationTextView"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/experienceTextView"-->
+        <!--app:layout_constraintVertical_chainStyle="packed"-->
+        <!--app:srcCompat="@android:drawable/ic_menu_myplaces" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/phoneImageView"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginEnd="60dp"-->
+        <!--android:contentDescription="@string/contact_number"-->
+        <!--android:onClick="dialPhoneNumber"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/actualPhoneNumberTextView"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/yearsTextView"-->
+        <!--app:layout_constraintVertical_chainStyle="packed"-->
+        <!--app:srcCompat="@android:drawable/sym_action_call" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/socialNetworkImageView"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:contentDescription="@string/social_network"-->
+        <!--android:onClick="openApp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/socialNetworkLinkTextView"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/phoneImageView"-->
+        <!--app:layout_constraintHorizontal_bias="0.516"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/locationImageView"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/yearsTextView"-->
+        <!--app:layout_constraintVertical_chainStyle="packed"-->
+        <!--app:srcCompat="@drawable/instagram_icon" />-->
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

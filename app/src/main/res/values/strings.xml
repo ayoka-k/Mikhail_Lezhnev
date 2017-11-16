@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mikhail Lezhnev</string>
+    <string name="placeholder">placeholder</string>
+    <string name="name">Mikhail Lezhnev</string>
+    <string name="occupation">Photographer</string>
+    <string name="camera">Camera</string>
+    <string name="lenses">Lenses</string>
+    <string name="experience">Experience</string>
+    <string name="type_of_camera">Canon 6D and DJI Phantom 4</string>
+    <string name="type_of_lenses">sigma 35\1.4 art and samyang 14\2.8</string>
+    <string name="years_of_experience">7 years</string>
+    <string name="place">Location</string>
+    <string name="social_network">Instagram</string>
+    <string name="contact_number">Phone number</string>
+    <string name="social_network_link">mihail_lezhnev</string>
+    <string name="location">Revda, Russia</string>
+    <string name="actual_phone_number">+79089014136</string>
+</resources>
